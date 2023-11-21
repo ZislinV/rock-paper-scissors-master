@@ -14,8 +14,16 @@ function App() {
         <Router>
           <Header />
           <Routes>
-            <Route exact path="/" element={<FirstStep />} />
-            <Route exact path="/secondStep" element={<SecondStep />} />
+            <Route
+              exact
+              path="/rock-paper-scissors-master/"
+              element={<FirstStep />}
+            />
+            <Route
+              exact
+              path="/rock-paper-scissors-master/secondStep"
+              element={<SecondStep />}
+            />
           </Routes>
           <Footer />
         </Router>
