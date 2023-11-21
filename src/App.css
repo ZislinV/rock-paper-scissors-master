@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Hanken+Grotesk:wght@500;700;800&family=League+Spartan:wght@700&family=Montserrat:wght@700&display=swap");
+
+html {
+  height: 100vh;
+}
+
+body {
+  background-image: radial-gradient(
+    at top center,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Barlow Semi Condensed;
+  margin: auto 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-title {
+  display: none;
+}
+
+header {
+  box-sizing: border-box;
+  width: 800px;
+  display: flex;
+  margin: 30px;
+  padding: 20px;
+  border: hsl(217, 16%, 45%) 2px solid;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.score-box {
+  background-color: hsl(0, 0%, 90%);
+  border-radius: 5px;
+  width: 20%;
+  padding: 10px;
+}
+
+h4 {
+  color: hsl(229, 64%, 46%);
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin: auto;
+}
+
+h1 {
+  color: hsl(229, 25%, 31%);
+  font-size: 4em;
+  margin: auto;
+}
+
+.first-step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  position: relative;
+  height: 450px;
+  width: 450px;
+  margin: 20px;
+}
+
+#pentagon {
+  position: absolute;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: brown;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.circle:hover .white-circle {
+  box-shadow: none;
+}
+
+.scissors:hover {
+  top: 4px;
+  box-shadow: none;
+}
+
+.spock:hover,
+.paper:hover {
+  top: 7.3rem;
+  box-shadow: none;
+}
+
+.lizard:hover,
+.rock:hover {
+  top: 18.3rem;
+  box-shadow: none;
+}
+
+.white-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 90%);
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  box-shadow: 0px 4px rgb(194, 191, 191) inset;
+
+  transition-duration: 0.3s;
+}
+.white-circle img {
+  padding: 2.2rem;
+}
+
+.scissors {
+  position: absolute;
+  background-color: hsl(40, 84%, 53%);
+  box-shadow: 0px -4px hsl(40, 84%, 40%) inset;
+  top: 0;
+  left: 10rem;
+}
+
+.spock {
+  position: absolute;
+  top: 7rem;
+  left: 0;
+
+  background-color: hsl(189, 58%, 57%);
+  box-shadow: 0px -4px hsl(189, 58%, 40%) inset;
+}
+
+.paper {
+  position: absolute;
+  top: 7rem;
+  right: 0;
+
+  background-color: hsl(230, 89%, 65%);
+  box-shadow: 0px -4px hsl(230, 89%, 40%) inset;
+}
+
+.lizard {
+  position: absolute;
+  top: 18rem;
+  left: 4rem;
+
+  background-color: hsl(261, 72%, 63%);
+  box-shadow: 0px -4px hsl(261, 72%, 45%) inset;
+}
+
+.rock {
+  position: absolute;
+  top: 18rem;
+  right: 4rem;
+
+  background-color: hsl(349, 70%, 56%);
+  box-shadow: 0px -4px hsl(349, 70%, 40%) inset;
+}
+
+footer button {
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-radius: 10px;
+  width: 110px;
+  height: 35px;
+  background-color: rgb(0, 0, 0, 0);
+  border: hsl(0, 0%, 100%) 1px solid;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-stretch: condensed;
+  cursor: pointer;
+  transition-duration: 0.7s;
+}
+
+footer button:hover {
+  background-color: hsl(191, 86%, 58%);
+  color: hsl(0, 0%, 0%);
+}
+
+/* //////////////////////////////////////////////////// */
+@media (max-width: 860px) {
+  .container {
+    width: 90vw;
+  }
+  header {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 520px) {
+  header {
+    padding: 10px;
+  }
+  .logo {
+    width: 80%;
+    height: 70px;
+  }
+
+  .left-box h2,
+  .right-box h2 {
+    display: none;
+  }
+  .mobile-title {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  h4 {
+    font-size: 0.7em;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  .score-box {
+    padding: 8px;
+    text-align: center;
+  }
+
+  header img {
+    height: 100%;
+  }
+
+  #pentagon {
+    height: 200px;
+    width: 200px;
+  }
+
+  .first-step {
+    height: 250px;
+    width: 250px;
+    margin-top: 50px;
+  }
+
+  .circle {
+    width: 5rem;
+    height: 5rem;
+  }
+  .circle img {
+    width: 50%;
+  }
+
+  .scissors {
+    left: 5.5rem;
+  }
+
+  .spock {
+    top: 4.5rem;
+    left: -0.5rem;
+  }
+
+  .paper {
+    top: 4.5rem;
+    right: -0.5rem;
+  }
+
+  .lizard {
+    top: 11rem;
+    left: 2rem;
+  }
+
+  .rock {
+    top: 11rem;
+    right: 2rem;
+  }
+
+  footer button {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
