@@ -22,7 +22,7 @@ export const ResultGame = () => {
     dispatch(newGame());
   };
   return (
-    <Link to="/">
+    <Link to="/rock-paper-scissors-master/">
       <CSSTransition
         in={finish}
         classNames="my-finish"
