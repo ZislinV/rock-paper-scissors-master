@@ -18,7 +18,8 @@ const FirstStep = () => {
   const dispatch = useDispatch();
 
   const clickHandler = (e) => {
-    // e.preventDefault();
+    // e.preventDefault() ;
+
     const classNames = [
       "lizard-img",
       "spock-img",
