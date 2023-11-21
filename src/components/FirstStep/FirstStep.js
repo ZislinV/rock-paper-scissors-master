@@ -39,7 +39,7 @@ const FirstStep = () => {
     <div className="first-step" onClick={clickHandler}>
       <img id="pentagon" src={pentagon} alt="pentagon" />
 
-      <Link to="/rock-paper-scissors-master/secondStep">
+      <Link to="/rock-paper-scissors-master/secondStep/">
         <Lizard />
         <Spock />
         <Scissors />

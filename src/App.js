@@ -21,7 +21,7 @@ function App() {
             />
             <Route
               exact
-              path="/rock-paper-scissors-master/secondStep"
+              path="/rock-paper-scissors-master/secondStep/"
               element={<SecondStep />}
             />
           </Routes>
